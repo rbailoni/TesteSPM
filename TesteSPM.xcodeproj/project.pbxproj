@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1094352C7B0BFB006DFACD /* NetworkProtocols in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1094342C7B0BFB006DFACD /* NetworkProtocols */; };
+		9A1094372C7B0BFB006DFACD /* ViewCodeProtocols in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1094362C7B0BFB006DFACD /* ViewCodeProtocols */; };
 		9AB416772C129EDD00377ED2 /* TesteSPMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB416762C129EDD00377ED2 /* TesteSPMApp.swift */; };
 		9AB416792C129EDD00377ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB416782C129EDD00377ED2 /* ContentView.swift */; };
 		9AB4167B2C129EDF00377ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB4167A2C129EDF00377ED2 /* Assets.xcassets */; };
@@ -19,6 +21,7 @@
 		9AB416782C129EDD00377ED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9AB4167A2C129EDF00377ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB4167D2C129EDF00377ED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9AB416872C12A19600377ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1094372C7B0BFB006DFACD /* ViewCodeProtocols in Frameworks */,
+				9A1094352C7B0BFB006DFACD /* NetworkProtocols in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,7 @@
 		9AB416752C129EDD00377ED2 /* TesteSPM */ = {
 			isa = PBXGroup;
 			children = (
+				9AB416872C12A19600377ED2 /* Info.plist */,
 				9AB416762C129EDD00377ED2 /* TesteSPMApp.swift */,
 				9AB416782C129EDD00377ED2 /* ContentView.swift */,
 				9AB4167A2C129EDF00377ED2 /* Assets.xcassets */,
@@ -83,6 +89,10 @@
 			dependencies = (
 			);
 			name = TesteSPM;
+			packageProductDependencies = (
+				9A1094342C7B0BFB006DFACD /* NetworkProtocols */,
+				9A1094362C7B0BFB006DFACD /* ViewCodeProtocols */,
+			);
 			productName = TesteSPM;
 			productReference = 9AB416732C129EDD00377ED2 /* TesteSPM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 9AB4166A2C129EDD00377ED2;
+			packageReferences = (
+				9A1094332C7B0BFB006DFACD /* XCRemoteSwiftPackageReference "Protocols" */,
+			);
 			productRefGroup = 9AB416742C129EDD00377ED2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -182,7 +195,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -245,7 +258,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -269,12 +282,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://jsonplaceholder.typicode.com";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TesteSPM/Preview Content\"";
 				DEVELOPMENT_TEAM = VDG6RR99Z3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TesteSPM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +313,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://uol.com.br";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TesteSPM/Preview Content\"";
 				DEVELOPMENT_TEAM = VDG6RR99Z3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TesteSPM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +361,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A1094332C7B0BFB006DFACD /* XCRemoteSwiftPackageReference "Protocols" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rbailoni/Protocols";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A1094342C7B0BFB006DFACD /* NetworkProtocols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A1094332C7B0BFB006DFACD /* XCRemoteSwiftPackageReference "Protocols" */;
+			productName = NetworkProtocols;
+		};
+		9A1094362C7B0BFB006DFACD /* ViewCodeProtocols */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A1094332C7B0BFB006DFACD /* XCRemoteSwiftPackageReference "Protocols" */;
+			productName = ViewCodeProtocols;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9AB4166B2C129EDD00377ED2 /* Project object */;
 }
